@@ -104,6 +104,9 @@ void greenScreenImage::applyGreenScreen(Image &screen, Image &img, std::string n
 
         int threads = 256;
         int blocks = (size + threads - 1) / threads;
+
+        auto start = std::chrono::high_resolution_clock::now();
+
         doGreenScreen<<<blocks, threads>>>(d_res, d_screen, d_img, size);
 
         cudaDeviceSynchronize();
