@@ -301,4 +301,11 @@ CMakeFiles/PixelBatch.dir/greenScreen.cu.o : /home/sinhaa/Desktop/PixelManipulat
     /usr/include/c++/15/bits/shared_ptr_atomic.h \
     /usr/include/c++/15/bits/atomic_base.h \
     /usr/include/c++/15/bits/atomic_lockfree_defines.h \
-    /usr/include/c++/15/backward/auto_ptr.h
+    /usr/include/c++/15/backward/auto_ptr.h \
+    /usr/include/c++/15/chrono \
+    /usr/include/c++/15/bits/chrono.h \
+    /usr/include/c++/15/ratio \
+    /usr/include/c++/15/cstdint \
+    /usr/include/c++/15/limits \
+    /usr/include/c++/15/ctime \
+    /usr/include/c++/15/bits/parse_numbers.h

@@ -12,7 +12,7 @@ set(CMAKE_CUDA_ARCHITECTURES 86-real)
 
 add_executable(PixelBatch
 	greenScreenProcess.cpp
-	greenScreen.cu
+	greenScreen.cpp
 	image.cpp
 	stb_image_resize2.cpp
 )

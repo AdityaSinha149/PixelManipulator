@@ -136,29 +136,29 @@ PixelBatch/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelBatch.dir/build.make CMakeFiles/PixelBatch.dir/build
 .PHONY : PixelBatch/fast
 
-greenScreen.o: greenScreen.cu.o
+greenScreen.o: greenScreen.cpp.o
 .PHONY : greenScreen.o
 
 # target to build an object file
-greenScreen.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelBatch.dir/build.make CMakeFiles/PixelBatch.dir/greenScreen.cu.o
-.PHONY : greenScreen.cu.o
+greenScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelBatch.dir/build.make CMakeFiles/PixelBatch.dir/greenScreen.cpp.o
+.PHONY : greenScreen.cpp.o
 
-greenScreen.i: greenScreen.cu.i
+greenScreen.i: greenScreen.cpp.i
 .PHONY : greenScreen.i
 
 # target to preprocess a source file
-greenScreen.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelBatch.dir/build.make CMakeFiles/PixelBatch.dir/greenScreen.cu.i
-.PHONY : greenScreen.cu.i
+greenScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelBatch.dir/build.make CMakeFiles/PixelBatch.dir/greenScreen.cpp.i
+.PHONY : greenScreen.cpp.i
 
-greenScreen.s: greenScreen.cu.s
+greenScreen.s: greenScreen.cpp.s
 .PHONY : greenScreen.s
 
 # target to generate assembly for a file
-greenScreen.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelBatch.dir/build.make CMakeFiles/PixelBatch.dir/greenScreen.cu.s
-.PHONY : greenScreen.cu.s
+greenScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PixelBatch.dir/build.make CMakeFiles/PixelBatch.dir/greenScreen.cpp.s
+.PHONY : greenScreen.cpp.s
 
 greenScreenProcess.o: greenScreenProcess.cpp.o
 .PHONY : greenScreenProcess.o

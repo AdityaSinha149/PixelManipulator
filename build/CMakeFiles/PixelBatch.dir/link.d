@@ -3,14 +3,9 @@ PixelBatch: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o \
-  CMakeFiles/PixelBatch.dir/greenScreen.cu.o \
+  CMakeFiles/PixelBatch.dir/greenScreen.cpp.o \
   CMakeFiles/PixelBatch.dir/image.cpp.o \
   CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.o \
-  /usr/local/cuda/targets/x86_64-linux/lib/libcudadevrt.a \
-  /usr/local/cuda/targets/x86_64-linux/lib/libcudart_static.a \
-  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/librt.a \
-  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libpthread.a \
-  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -36,7 +31,8 @@ PixelBatch: \
   /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o \
-  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+  /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o \
+  /lib64/ld-linux-x86-64.so.2
 
 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o:
 
@@ -46,21 +42,11 @@ PixelBatch: \
 
 CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o:
 
-CMakeFiles/PixelBatch.dir/greenScreen.cu.o:
+CMakeFiles/PixelBatch.dir/greenScreen.cpp.o:
 
 CMakeFiles/PixelBatch.dir/image.cpp.o:
 
 CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.o:
-
-/usr/local/cuda/targets/x86_64-linux/lib/libcudadevrt.a:
-
-/usr/local/cuda/targets/x86_64-linux/lib/libcudart_static.a:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/librt.a:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libpthread.a:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libdl.a:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 
@@ -113,3 +99,5 @@ CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.o:
 /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o:
+
+/lib64/ld-linux-x86-64.so.2:

@@ -4,9 +4,12 @@
 #include <algorithm>
 #include <dirent.h>
 #include <iostream>
+#include <iomanip>
 #include <stdexcept>
 #include <string>
 #include <vector>
+#include <chrono>
+
 
 namespace {
 std::vector<std::string> listFiles(const std::string& dir)
@@ -46,14 +49,23 @@ int main()
         return 1;
     }
 
-    for (size_t i = 0; i < pairCount; ++i)
+    size_t numToProcess = 0;
+    std::cout << "How many image pairs do you want to process? (max: " << pairCount << ") ";
+    std::cin >> numToProcess;
+    if (numToProcess > pairCount) numToProcess = pairCount;
+
+    auto start = std::chrono::high_resolution_clock::now();
+    for (size_t i = 0; i < numToProcess; ++i)
     {
-        std::cout << "Processing pair " << i << ": " << screens[i] << " + " << inputs[i] << "\n";
         Image screenImage{screens[i]};
         Image inputImage{inputs[i]};
 
         std::string outputFile = "pics/outputs/output_" + std::to_string(i) + ".jpg";
         greenScreenImage::applyGreenScreen(screenImage, inputImage, outputFile);
     }
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> elapsed = end - start;
+    std::cout << std::fixed << std::setprecision(3);
+    std::cout << "Total time elapsed: " << elapsed.count() << " ms\n";
     return 0;
 }

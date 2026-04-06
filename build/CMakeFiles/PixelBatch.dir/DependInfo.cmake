@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sinhaa/Desktop/PixelManipulator/greenScreen.cu" "CMakeFiles/PixelBatch.dir/greenScreen.cu.o" "gcc" "CMakeFiles/PixelBatch.dir/greenScreen.cu.o.d"
+  "/home/sinhaa/Desktop/PixelManipulator/greenScreen.cpp" "CMakeFiles/PixelBatch.dir/greenScreen.cpp.o" "gcc" "CMakeFiles/PixelBatch.dir/greenScreen.cpp.o.d"
   "/home/sinhaa/Desktop/PixelManipulator/greenScreenProcess.cpp" "CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o" "gcc" "CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o.d"
   "/home/sinhaa/Desktop/PixelManipulator/image.cpp" "CMakeFiles/PixelBatch.dir/image.cpp.o" "gcc" "CMakeFiles/PixelBatch.dir/image.cpp.o.d"
   "/home/sinhaa/Desktop/PixelManipulator/stb_image_resize2.cpp" "CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.o" "gcc" "CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.o.d"

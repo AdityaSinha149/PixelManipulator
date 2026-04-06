@@ -86,19 +86,19 @@ CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sinhaa/Desktop/PixelManipulator/greenScreenProcess.cpp -o CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.s
 
-CMakeFiles/PixelBatch.dir/greenScreen.cu.o: CMakeFiles/PixelBatch.dir/flags.make
-CMakeFiles/PixelBatch.dir/greenScreen.cu.o: /home/sinhaa/Desktop/PixelManipulator/greenScreen.cu
-CMakeFiles/PixelBatch.dir/greenScreen.cu.o: CMakeFiles/PixelBatch.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sinhaa/Desktop/PixelManipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/PixelBatch.dir/greenScreen.cu.o"
-	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/PixelBatch.dir/greenScreen.cu.o -MF CMakeFiles/PixelBatch.dir/greenScreen.cu.o.d -x cu -c /home/sinhaa/Desktop/PixelManipulator/greenScreen.cu -o CMakeFiles/PixelBatch.dir/greenScreen.cu.o
+CMakeFiles/PixelBatch.dir/greenScreen.cpp.o: CMakeFiles/PixelBatch.dir/flags.make
+CMakeFiles/PixelBatch.dir/greenScreen.cpp.o: /home/sinhaa/Desktop/PixelManipulator/greenScreen.cpp
+CMakeFiles/PixelBatch.dir/greenScreen.cpp.o: CMakeFiles/PixelBatch.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sinhaa/Desktop/PixelManipulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PixelBatch.dir/greenScreen.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PixelBatch.dir/greenScreen.cpp.o -MF CMakeFiles/PixelBatch.dir/greenScreen.cpp.o.d -o CMakeFiles/PixelBatch.dir/greenScreen.cpp.o -c /home/sinhaa/Desktop/PixelManipulator/greenScreen.cpp
 
-CMakeFiles/PixelBatch.dir/greenScreen.cu.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/PixelBatch.dir/greenScreen.cu.i"
-	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+CMakeFiles/PixelBatch.dir/greenScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PixelBatch.dir/greenScreen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sinhaa/Desktop/PixelManipulator/greenScreen.cpp > CMakeFiles/PixelBatch.dir/greenScreen.cpp.i
 
-CMakeFiles/PixelBatch.dir/greenScreen.cu.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/PixelBatch.dir/greenScreen.cu.s"
-	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+CMakeFiles/PixelBatch.dir/greenScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PixelBatch.dir/greenScreen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sinhaa/Desktop/PixelManipulator/greenScreen.cpp -o CMakeFiles/PixelBatch.dir/greenScreen.cpp.s
 
 CMakeFiles/PixelBatch.dir/image.cpp.o: CMakeFiles/PixelBatch.dir/flags.make
 CMakeFiles/PixelBatch.dir/image.cpp.o: /home/sinhaa/Desktop/PixelManipulator/image.cpp
@@ -131,7 +131,7 @@ CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.s: cmake_force
 # Object files for target PixelBatch
 PixelBatch_OBJECTS = \
 "CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o" \
-"CMakeFiles/PixelBatch.dir/greenScreen.cu.o" \
+"CMakeFiles/PixelBatch.dir/greenScreen.cpp.o" \
 "CMakeFiles/PixelBatch.dir/image.cpp.o" \
 "CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.o"
 
@@ -139,7 +139,7 @@ PixelBatch_OBJECTS = \
 PixelBatch_EXTERNAL_OBJECTS =
 
 PixelBatch: CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o
-PixelBatch: CMakeFiles/PixelBatch.dir/greenScreen.cu.o
+PixelBatch: CMakeFiles/PixelBatch.dir/greenScreen.cpp.o
 PixelBatch: CMakeFiles/PixelBatch.dir/image.cpp.o
 PixelBatch: CMakeFiles/PixelBatch.dir/stb_image_resize2.cpp.o
 PixelBatch: CMakeFiles/PixelBatch.dir/build.make

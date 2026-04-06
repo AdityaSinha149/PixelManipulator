@@ -2,6 +2,7 @@
 #include "lib/stb_image_resize2.h"
 #include <memory>
 #include "cuda_runtime.h"
+#include <chrono>
 
 __global__ void doGreenScreen(unsigned char* d_resultant, unsigned char* d_screen, unsigned char* d_img, int size)
 {
@@ -105,6 +106,8 @@ void greenScreenImage::applyGreenScreen(Image &screen, Image &img, std::string n
         int blocks = (size + threads - 1) / threads;
         doGreenScreen<<<blocks, threads>>>(d_res, d_screen, d_img, size);
 
+        cudaDeviceSynchronize();
+        
         cudaMemcpy(res.data(), d_res, (size * 3) * sizeof(unsigned char), cudaMemcpyDeviceToHost);
 
         Image resImage{res, screen.getWidth(), screen.getHeight()};

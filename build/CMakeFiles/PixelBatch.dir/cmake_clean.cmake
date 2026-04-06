@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PixelBatch.dir/link.d"
-  "CMakeFiles/PixelBatch.dir/greenScreen.cu.o"
-  "CMakeFiles/PixelBatch.dir/greenScreen.cu.o.d"
+  "CMakeFiles/PixelBatch.dir/greenScreen.cpp.o"
+  "CMakeFiles/PixelBatch.dir/greenScreen.cpp.o.d"
   "CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o"
   "CMakeFiles/PixelBatch.dir/greenScreenProcess.cpp.o.d"
   "CMakeFiles/PixelBatch.dir/image.cpp.o"
@@ -13,6 +13,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CUDA CXX)
+foreach(lang CXX)
   include(CMakeFiles/PixelBatch.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

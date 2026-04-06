@@ -1,7 +1,6 @@
 #include "greenScreen.h"
-#define STB_IMAGE_RESIZE_IMPLEMENTATION
-#include "lib/stb_image_resize2.h"
 #include <memory>
+#include "lib/stb_image_resize2.h"
 
 bool greenScreenImage::checkAspectRatio(const Image &img1, const Image &img2)
 {
@@ -62,8 +61,6 @@ void greenScreenImage::applyGreenScreen(Image &screen, Image &img, std::string n
 
     int size = screen.getWidth()*screen.getHeight();
     std::vector<unsigned char> res (size * 3);
-
-   
     for (size_t i = 0; i < static_cast<size_t>( size * 3 ); i += 3)
     {
         int r = static_cast<int>(screenStream[i]);
@@ -83,12 +80,9 @@ void greenScreenImage::applyGreenScreen(Image &screen, Image &img, std::string n
             res[i + 1] = screenStream[i + 1];
             res[i + 2] = screenStream[i + 2];
         }
-
     }
 
-    
     Image resImage{res, screen.getWidth(), screen.getHeight()};
-
     resImage.Save(name);
-        std::cout<<"Executed Successfully, new image in: "<<name<<std::endl;
+    std::cout<<"Executed Successfully, new image in: "<<name<<std::endl;
 }
